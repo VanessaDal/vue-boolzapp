@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  height: 50px;
+  border-radius: 50%;
+}
+
 .green-bar {
   width: 100vw;
   height: 120px;
@@ -26,6 +31,8 @@
   z-index: 100;
   bottom: 5%;
   left: 10%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .container-left {
@@ -38,6 +45,7 @@
   width: 100%;
   height: 11%;
   background-color: #eaeaea;
+  display: flex;
 }
 
 .notifiche {
@@ -64,4 +72,23 @@
   width: 100%;
   height: 15%;
   border-bottom: 1px solid #eaeaea;
+}
+
+.container-right {
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid grey;
+}
+
+.chat {
+  background-image: url("../img/mine.jpg");
+  width: 100%;
+  height: 78%;
+}
+
+.text {
+  width: 100%;
+  height: 11%;
+  background-color: #eaeaea;
 }

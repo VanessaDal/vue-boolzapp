@@ -57,34 +57,36 @@ h3 {
 .left {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 50%;
 }
 
 .container-left .nome-utente .left img {
-  margin: 6% 5%;
+  margin: 0 6%;
 }
 
-.container-left .nome-utente .left h3 {
+/* .container-left .nome-utente .left h3 {
   margin-top: 15%;
-}
+} */
 
-.container-left .left h3 {
+/* .container-left .left h3 {
   margin-left: 5%;
   margin-top: 5%;
-}
+} */
 
 .right {
   min-width: 40%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .container-left .right i {
   color: #b1b1b1;
   font-size: 20px;
   margin-right: 10%;
-  margin-top: 18%;
+  /* margin-top: 18%; */
 }
 
 /* .right h4 {
@@ -140,7 +142,7 @@ h3 {
   width: 65%;
   height: 100%;
   background-color: white;
-  border-left: 1px solid grey;
+  border-left: 1px solid #b1b1b1;
 }
 
 .container-right .nome-utente .left img {
@@ -151,7 +153,7 @@ h3 {
   color: #b1b1b1;
   font-size: 20px;
   margin-right: 8%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .chat {
@@ -166,7 +168,6 @@ h3 {
   background-color: #eaeaea;
 }
 
-.container-right .nome-utente h4 {
+.container-right .nome-utente p {
   align-self: center;
-  margin-left: -30px;
 }

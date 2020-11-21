@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.green-bar {
+  width: 100vw;
+  height: 120px;
+  background-color: #009988;
+  position: relative;
+}
+
+.grey-bar {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  background-color: #dadbd2;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  /* margin: 5% 10%; */
+  background-color: yellow;
+  z-index: 100;
+  bottom: 5%;
+  left: 10%;
+}
+
+.container-left {
+  width: 35%;
+  height: 100%;
+  background-color: white;
+}
+
+.nome-utente {
+  width: 100%;
+  height: 11%;
+  background-color: #eaeaea;
+}
+
+.notifiche {
+  width: 100%;
+  height: 14%;
+  background-color: #76dcff;
+}
+
+.ricerca {
+  width: 100%;
+  height: 6%;
+  background-color: #eaeaea;
+}
+
+.contatti {
+  width: 100%;
+  height: calc(100% - 11% - 14% - 6%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.utenti {
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #eaeaea;
+}

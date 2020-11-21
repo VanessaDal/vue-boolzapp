@@ -60,15 +60,15 @@ h3 {
   min-width: 50%;
 }
 
-.nome-utente .left img {
+.container-left .nome-utente .left img {
   margin: 6% 5%;
 }
 
-.nome-utente .left h3 {
+.container-left .nome-utente .left h3 {
   margin-top: 15%;
 }
 
-.left h3 {
+.container-left .left h3 {
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -80,11 +80,11 @@ h3 {
   justify-content: flex-end;
 }
 
-.right i {
+.container-left .right i {
   color: #b1b1b1;
   font-size: 20px;
   margin-right: 10%;
-  margin-top: 15%;
+  margin-top: 18%;
 }
 
 /* .right h4 {
@@ -123,6 +123,17 @@ h3 {
   height: 100%;
   background-color: white;
   border-left: 1px solid grey;
+}
+
+.container-right .nome-utente .left img {
+  margin: 3% 5%;
+}
+
+.container-right .right i {
+  color: #b1b1b1;
+  font-size: 20px;
+  margin-right: 8%;
+  margin-top: 10%;
 }
 
 .chat {

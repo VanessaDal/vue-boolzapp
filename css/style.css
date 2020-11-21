@@ -7,6 +7,12 @@
 img {
   height: 50px;
   border-radius: 50%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 .green-bar {
@@ -26,7 +32,6 @@ img {
   position: absolute;
   width: 80%;
   height: 90%;
-  /* margin: 5% 10%; */
   background-color: yellow;
   z-index: 100;
   bottom: 5%;
@@ -46,6 +51,34 @@ img {
   height: 11%;
   background-color: #eaeaea;
   display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 40%;
+}
+
+.nome-utente .left img {
+  margin: 6% 5%;
+}
+
+.nome-utente .left h3 {
+  margin-top: 15%;
+}
+
+.right {
+  min-width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right i {
+  color: #b1b1b1;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-top: 15%;
 }
 
 .notifiche {

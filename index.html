@@ -111,7 +111,9 @@
                     <div class="chat"></div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write"><input type="text" placeholder="Scrivi un messaggio"></div>
+                        <div class="write" id="app"><input v-model="text" type="text" v-on:keyup.enter="submitText" placeholder="Scrivi un messaggio">
+                                <div class="my-message" v-for="(message, index) in todo">{{message }}
+                                </div></div>
                         <div class="microfono"><i class="fas fa-microphone"></i></div>
                     </div>
                 </div>

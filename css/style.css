@@ -99,6 +99,7 @@ h3 {
   background-color: #76dcff;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .notifiche i {
@@ -108,12 +109,10 @@ h3 {
   padding: 15px;
   border-radius: 90%;
   margin-left: 20%;
-  margin-top: 25%;
 }
 
 .notifiche-text {
   margin-left: 5%;
-  margin-top: 5%;
 }
 
 .ricerca {

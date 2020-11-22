@@ -235,13 +235,14 @@ h3 {
   margin-right: 5%;
   margin-bottom: 3%;
   border-radius: 10px;
-  padding: 1%;
+  padding: 1% 1% 0 1%;
 }
 
 .chat p {
   font-size: 10px;
   align-self: flex-end;
   color: #c4c7c8;
+  margin-left: 65%;
 }
 
 .chat h4 {

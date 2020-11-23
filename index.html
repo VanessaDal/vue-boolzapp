@@ -46,14 +46,14 @@
                     <div class="contatti">
                         <div class="utenti" v-for="(utente, index) in contatti">
                             <div class="left">
-                                <img src="utente.img"  alt="">
+                                <img :src='utente.img'  alt="">
                                 <div>
                                     <h3>{{utente.nome}}</h3>
-                                    <p>ok..</p>
+                                    <p>{{utente.anteprima}}</p>
                                 </div>
                             </div>
                             <div class="right">
-                                <p>22/11/2020 16:15</p>
+                                <p>{{utente.accesso}}</p>
                             </div>
                         </div>
                         <!-- <div class="utenti">
@@ -136,8 +136,8 @@
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write" ><input v-model="text" type="text" v-on:keyup.enter="submitText" placeholder="Scrivi un messaggio">
-                                <div class="my-message" v-for="(message, index) in todo">{{message }}
+                        <div class="write" ><input  placeholder="Scrivi un messaggio">
+                                <div class="my-message">
                                 </div></div>
                         <div class="microfono"><i class="fas fa-microphone"></i></div>
                     </div>

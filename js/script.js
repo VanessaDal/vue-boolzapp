@@ -1,8 +1,39 @@
-var write=new Vue({
+var app=new Vue({
     el: '#app',
     data:{
-        todo:[],
-        text:""
+        contatti:[{
+            nome:"Billy Ballo",
+            anteprima:"ok...",
+            img:"img/avatar_2.jpg",
+            chat:[{
+                ricevuto:"ciao sono billy ballo"
+            },
+            {
+            nome:"Herbert Ballerina",
+            anteprima:"ok...",
+            img:"img/avatar_3.jpg",
+            chat:[{
+                ricevuto:"ciao sono herbert"
+            },
+            {
+            nome:"Anna Pannocchia",
+            anteprima:"ok...",
+            img:"img/avatar_4.jpg",
+            chat:[{
+            ricevuto:"ciao sono Anna"
+            },
+            {
+            nome:"Riccardino Fuffolo",
+            anteprima:"ok...",
+            img:"img/avatar_5.jpg",
+            chat:[{
+                ricevuto:"ciao sono Riccardino"
+            }]
+        
+    
+        }],
+        
+        
     },
     methods:{
         submitText:function(){

@@ -44,7 +44,7 @@
 
                     </div>
                     <div class="contatti">
-                        <div class="utenti" v-for="(utente, index) in contatti">
+                        <div class="utenti" v-for="(utente, index) in contatti" :class="{}" @click='activeChat(index)'>
                             <div class="left">
                                 <img :src='utente.img'  alt="">
                                 <div>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write" ><input  placeholder="Scrivi un messaggio">
+                        <div class="write" ><input type="text" placeholder="Scrivi un messaggio">
                                 <div class="my-message">
                                 </div></div>
                         <div class="microfono"><i class="fas fa-microphone"></i></div>

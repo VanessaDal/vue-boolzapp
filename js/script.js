@@ -10,6 +10,7 @@ var app=new Vue({
             selezionato:true,
             chat:[{
                 ricevuto:"ciao sono billy ballo",
+                time: "22/11/2020 16:15",
                 status:"received"
             }]
             },
@@ -21,6 +22,7 @@ var app=new Vue({
             selezionato:false,
             chat:[{
                 ricevuto:"ciao sono herbert",
+                time: "22/11/2020 16:15",
                 status:"received"
             }]
             },
@@ -32,6 +34,7 @@ var app=new Vue({
             selezionato:false,
             chat:[{
             ricevuto:"ciao sono Anna",
+            time: "22/11/2020 16:15",
             status:"received"
             }]
             },
@@ -43,8 +46,14 @@ var app=new Vue({
             selezionato:false,
             chat:[{
                 ricevuto:"ciao sono Riccardino",
+                time: "22/11/2020 16:15",
                 status:"received"
-            }]
+            },
+            {ricevuto:"ciao sono Riccardino000",
+                time: "22/11/2020 16:16",
+                status:"received"
+            }
+            ]
             }
         ]
         },

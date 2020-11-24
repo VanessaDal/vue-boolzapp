@@ -98,9 +98,9 @@
 
                     <div class="nome-utente">
                         <div class="left">
-                            <img class="img-speciale" src="img/me.jpg" alt="">
+                            <img class="img-speciale" :src="contatti[active].img" alt="">
                             <div>
-                                <h3>Vanessa </h3>
+                                <h3>{{contatti[active].nome}} </h3>
                                 <p>Ultimo accesso oggi alle 19:48</p>
                             </div>
                         </div>
@@ -112,9 +112,9 @@
                     </div>
                        
                     <div class="chat"> 
-                        <div  v-for="(message, index) in contatti[active].chat" class="received">
+                        <div  v-for="(message, index) in contatti[active].chat" :class='message.status'>
                             <h4>{{message.ricevuto}}</h4> 
-                            <p>22/11/2020 16:15</p>
+                            <p>{{message.time}}</p>
                         </div>
                         <div class="sent">
                             <h4>bla bla bla bla bla</h4>

@@ -7,7 +7,7 @@ var app=new Vue({
             anteprima:"ok...",
             img:"img/avatar_2.jpg",
             accesso:"22/11/2020 16:15",
-            
+            selezionato:true,
             chat:[{
                 ricevuto:"ciao sono billy ballo"
             }]
@@ -17,7 +17,7 @@ var app=new Vue({
             anteprima:"ok...",
             img:"img/avatar_3.jpg",
             accesso:"22/11/2020 16:15",
-            
+            selezionato:false,
             chat:[{
                 ricevuto:"ciao sono herbert"
             }]
@@ -27,7 +27,7 @@ var app=new Vue({
             anteprima:"ok...",
             img:"img/avatar_4.jpg",
             accesso:"22/11/2020 16:15",
-            
+            selezionato:false,
             chat:[{
             ricevuto:"ciao sono Anna"
             }]
@@ -37,7 +37,7 @@ var app=new Vue({
             anteprima:"ok...",
             img:"img/avatar_5.jpg",
             accesso:"22/11/2020 16:15",
-            
+            selezionato:false,
             chat:[{
                 ricevuto:"ciao sono Riccardino"
             }]

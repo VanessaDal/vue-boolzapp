@@ -20,7 +20,8 @@ var app=new Vue({
             accesso:"22/11/2020 16:15",
             selezionato:false,
             chat:[{
-                ricevuto:"ciao sono herbert"
+                ricevuto:"ciao sono herbert",
+                status:"received"
             }]
             },
             {
@@ -30,7 +31,8 @@ var app=new Vue({
             accesso:"22/11/2020 16:15",
             selezionato:false,
             chat:[{
-            ricevuto:"ciao sono Anna"
+            ricevuto:"ciao sono Anna",
+            status:"received"
             }]
             },
             {
@@ -40,7 +42,8 @@ var app=new Vue({
             accesso:"22/11/2020 16:15",
             selezionato:false,
             chat:[{
-                ricevuto:"ciao sono Riccardino"
+                ricevuto:"ciao sono Riccardino",
+                status:"received"
             }]
             }
         ]

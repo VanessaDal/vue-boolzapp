@@ -50,12 +50,12 @@ var app=new Vue({
         
     methods:{
         activeChat: function(index) {
-            this.chatIndex = index;
-            this.users.map(function(user, index) {
-                user.selected = user.selected === this.chatIndex;
+            this.active = index;
+            this.contatti.map(function(user, index) {
+                user.selezionato = user.selezionato === this.active;
                 return user;
             })
-            this.users[index].selected=true;
+            this.contatti[index].selezionato=true;
         }
 
     //     submitText:function(){

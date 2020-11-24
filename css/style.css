@@ -270,5 +270,9 @@ h3 {
 }
 
 .active {
-  background-color: white;
+  background-color: red;
+}
+
+.utenti:hover {
+  cursor: pointer;
 }

@@ -9,7 +9,8 @@ var app=new Vue({
             accesso:"22/11/2020 16:15",
             selezionato:true,
             chat:[{
-                ricevuto:"ciao sono billy ballo"
+                ricevuto:"ciao sono billy ballo",
+                status:"received"
             }]
             },
             {
@@ -45,13 +46,10 @@ var app=new Vue({
         ]
         },
         
-    
- 
-        
     methods:{
         activeChat: function(index) {
             this.active = index;
-            this.contatti.map(function(user, index) {
+            this.contatti.map(function(user) {
                 user.selezionato = user.selezionato === this.active;
                 return user;
             })

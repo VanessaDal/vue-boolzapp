@@ -111,15 +111,16 @@
                         </div>
                     </div>
                        
-                    <div class="chat">
-                        <div class="received"> 
-                            <h4>ciao</h4> 
+                    <div class="chat"> 
+                        <div  v-for="(message, index) in contatti[active].chat" class="received">
+                            <h4>{{message.ricevuto}}</h4> 
                             <p>22/11/2020 16:15</p></div>
+                        </div>
                         <div class="sent">
                             <h4>bla bla bla bla bla</h4>
                             <p>22/11/2020 16:15</p>
                         </div>
-                        <div class="sent"> 
+                        <!-- <div class="sent"> 
                             <h4>jdjdsik
                                     kvxlkvfò
                                     dfjdfd
@@ -132,7 +133,7 @@
                         <div class="received"> 
                             <h4>I've heard George stinks</h4> 
                             <p>22/11/2020 16:15</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>

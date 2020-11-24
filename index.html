@@ -44,7 +44,7 @@
 
                     </div>
                     <div class="contatti">
-                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': utente.selezionato}" @click='activeChat(index)'></div>
+                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': utente.selezionato}" @click='activeChat(index)'>
                             <div class="left">
                                 <img :src='utente.img'  alt="">
                                 <div>

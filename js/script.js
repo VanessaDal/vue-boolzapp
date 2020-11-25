@@ -90,6 +90,13 @@ var app=new Vue({
             this.contatti[index].selezionato=true;*/
         },
 
+        chatBot:function(){
+            this.contatti[this.active].chat.push({
+                testo: "che vuoi?",
+                status:"received"
+            })
+        },
+        
         submitText:function(){
             console.log (this.text)
 
@@ -100,11 +107,7 @@ var app=new Vue({
             })
 
             this.text="";
-            /*this.contatti[this.active].chat.push({
-                inviato:this.text,
-                time: "22/11/2020 16:16",
-                status:"sent"});
-            */
         },
+
     }
 })

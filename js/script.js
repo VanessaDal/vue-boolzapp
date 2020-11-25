@@ -94,7 +94,11 @@ var app=new Vue({
             this.contatti[this.active].chat.push({
                 testo: "che vuoi?",
                 status:"received"
-            })
+            });
+        },
+
+        timedChatBot:function(){
+            setTimeout(this.chatBot,3000)
         },
         
         submitText:function(){

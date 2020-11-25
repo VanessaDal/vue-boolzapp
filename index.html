@@ -119,10 +119,10 @@
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write" ><input type="text" v-model="text" placeholder="Scrivi un messaggio" v-on:keyup.enter="submitText() ; chatBot()">
+                        <div class="write" ><input type="text" v-model="text" placeholder="Scrivi un messaggio" v-on:keyup.enter="submitText() ; timedChatBot()">
                                 <div class="my-message">
                                 </div></div>
-                        <div class="microfono" @click="submitText() ; chatBot()"><i class="fas fa-microphone"></i></div>
+                        <div class="microfono" @click="submitText() ; timedChatBot()"><i class="fas fa-microphone"></i></div>
                     </div>
                 </div>
             </div>

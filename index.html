@@ -44,7 +44,7 @@
 
                     </div>
                     <div class="contatti">
-                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': utente.selezionato}" @click='activeChat(index)'>
+                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': index == active}" @click='activeChat(index)'>
                             <div class="left">
                                 <img :src='utente.img'  alt="">
                                 <div>
@@ -113,34 +113,16 @@
                        
                     <div class="chat"> 
                         <div  v-for="(message, index) in contatti[active].chat" :class='message.status'>
-                            <h4>{{message.ricevuto}}</h4> 
+                            <h4>{{message.testo}}</h4> 
                             <p>{{message.time}}</p>
-                        </div>
-                        <div v-for="(message, index) in contatti[active].chat" :class='message.status'>
-                            <h4>{{message.inviato}}</h4>
-                            <p>22/11/2020 16:15</p>
-                            <!-- <div class="sent"> 
-                                <h4>jdjdsik
-                                    kvxlkvfò
-                                    dfjdfd
-                                    dsfdskf dfjdsoifj dofsfjd
-                                    fdofsdkfposd
-                                    fdsjfidfgfdgh
-                                </h4> 
-                                <p>22/11/2020 16:15</p>
-                            </div>
-                            <div class="received"> 
-                                <h4>I've heard George stinks</h4> 
-                                <p>22/11/2020 16:15</p>
-                            </div> -->
                         </div>
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write" ><input type="text" v-model="contatti[active].text" placeholder="Scrivi un messaggio" v-on:keyup.enter="submitText">
+                        <div class="write" ><input type="text" v-model="text" placeholder="Scrivi un messaggio" v-on:keyup.enter="submitText">
                                 <div class="my-message">
                                 </div></div>
-                        <div class="microfono"><i class="fas fa-microphone"></i></div>
+                        <div class="microfono" @click="submitText"><i class="fas fa-microphone"></i></div>
                     </div>
                 </div>
             </div>

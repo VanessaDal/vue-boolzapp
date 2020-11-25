@@ -116,7 +116,7 @@
                             <h4>{{message.ricevuto}}</h4> 
                             <p>{{message.time}}</p>
                         </div>
-                        <div v-for="(message, index) in contatti[active].chat" :class='message.status' v-on:keyup.enter="submitText">
+                        <div v-for="(message, index) in contatti[active].chat" :class='message.status'>
                             <h4>{{message.inviato}}</h4>
                             <p>22/11/2020 16:15</p>
                             <!-- <div class="sent"> 
@@ -137,7 +137,7 @@
                     </div>
                     <div class="text">
                         <div class="emoticons"><i class="far fa-smile"></i></div>
-                        <div class="write" ><input type="text" v-model="contatti[active].text" placeholder="Scrivi un messaggio">
+                        <div class="write" ><input type="text" v-model="contatti[active].text" placeholder="Scrivi un messaggio" v-on:keyup.enter="submitText">
                                 <div class="my-message">
                                 </div></div>
                         <div class="microfono"><i class="fas fa-microphone"></i></div>

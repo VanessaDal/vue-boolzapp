@@ -13,7 +13,9 @@ var app=new Vue({
                 ricevuto:"ciao sono billy ballo",
                 time: "22/11/2020 16:15",
                 status:"received"
-            }]
+            },
+            {inviato:"ciao",
+            status:"sent"}  ]
             },
             {
             nome:"Herbert Ballerina",
@@ -41,7 +43,9 @@ var app=new Vue({
             ricevuto:"ciao sono Anna",
             time: "22/11/2020 16:15",
             status:"received"
-            }]
+            },
+            {inviato:"ciao",
+                status:"sent"} ]
             },
             {
             nome:"Riccardino Fuffolo",
@@ -58,7 +62,9 @@ var app=new Vue({
             {ricevuto:"ciao sono Riccardino000",
                 time: "22/11/2020 16:16",
                 status:"received"
-            }
+            },
+            {inviato:"ciao",
+                status:"sent"}
             ]
             }
         ]
@@ -75,8 +81,10 @@ var app=new Vue({
         },
 
         submitText:function(){
-            this.chat.push({
+            console.log (this.text)
+            this.contatti[this.active].chat.push({
                 inviato:this.text,
+                time: "22/11/2020 16:16",
                 status:"sent"});
             this.text="";
         },

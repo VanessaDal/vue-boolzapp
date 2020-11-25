@@ -26,7 +26,9 @@ var app=new Vue({
                 ricevuto:"ciao sono herbert",
                 time: "22/11/2020 16:15",
                 status:"received"
-            }]
+            },
+                {inviato:"ciao",
+                status:"sent"}]
             },
             {
             nome:"Anna Pannocchia",
@@ -70,14 +72,13 @@ var app=new Vue({
                 return user;
             })
             this.contatti[index].selezionato=true;
-        }
+        },
 
-    //     submitText:function(){
-    //         if(this.todo.includes(this.text)===false){
-    //         this.todo.push(this.text);
-    //         this.text="";
-    //         console.log(this.todo)}
-    //         else{alert("This task already exist")}
-    //     },
+        submitText:function(){
+            this.chat.push({
+                inviato:this.text,
+                status:"sent"});
+            this.text="";
+        },
     }
 })

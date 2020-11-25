@@ -116,8 +116,8 @@
                             <h4>{{message.ricevuto}}</h4> 
                             <p>{{message.time}}</p>
                         </div>
-                        <div class="sent">
-                            <h4>bla bla bla bla bla</h4>
+                        <div v-for="(message, index) in contatti[active].chat" :class='message.status' v-on:keyup.enter="submitText">
+                            <h4>{{message.inviato}}</h4>
                             <p>22/11/2020 16:15</p>
                             <!-- <div class="sent"> 
                                 <h4>jdjdsik

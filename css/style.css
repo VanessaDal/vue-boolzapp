@@ -71,15 +71,6 @@ h3 {
   margin: 0 6%;
 }
 
-/* .container-left .nome-utente .left h3 {
-  margin-top: 15%;
-} */
-
-/* .container-left .left h3 {
-  margin-left: 5%;
-  margin-top: 5%;
-} */
-
 .right {
   min-width: 40%;
   height: 100%;
@@ -92,7 +83,6 @@ h3 {
   color: #b1b1b1;
   font-size: 20px;
   margin-right: 10%;
-  /* margin-top: 18%; */
 }
 
 .utenti .right p {
@@ -119,6 +109,10 @@ h3 {
 
 .notifiche-text {
   margin-left: 5%;
+}
+
+.notifiche-text p {
+  text-decoration: underline;
 }
 
 .ricerca {
@@ -243,6 +237,7 @@ h3 {
   margin-top: 3%;
   border-radius: 10px;
   padding: 1% 1% 0 1%;
+  position: relative;
 }
 
 .chat p {
@@ -251,6 +246,34 @@ h3 {
   color: #c4c7c8;
   margin-left: 65%;
 }
+
+.fa-chevron-circle-down {
+  float: right;
+  color: #e5ddd5;
+}
+
+.fa-chevron-circle-down:hover + .dropdown {
+  display: inline-block;
+}
+
+.dropdown {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding-top: 2%;
+  background-color: rgb(252, 252, 252, 0.5);
+  border-radius: 10px;
+  border: 1px solid #c4c7c8;
+}
+
+/* .chat h4:hover + .fa-chevron-circle-down {
+  display: inline-block;
+  cursor: pointer;
+} */
 
 .chat h4 {
   margin-bottom: 5px;
@@ -266,6 +289,7 @@ h3 {
   margin-left: 5%;
   border-radius: 10px;
   padding: 1% 1% 0 1%;
+  position: relative;
 }
 
 .active {

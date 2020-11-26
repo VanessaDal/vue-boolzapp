@@ -35,7 +35,7 @@
                         </div>
                         <div class="notifiche-text">
                             <h3>Ricevi notifiche di nuovi messaggi</h3>
-                            <p>Attiva notifiche desktop</p>
+                            <p> Attiva notifiche desktop</p>
                         </div>
                     </div>
                     <div class="ricerca">
@@ -112,8 +112,13 @@
                     </div>
                        
                     <div class="chat"> 
-                        <div  v-for="(message, index) in contatti[active].chat" :class='message.status'>
+                        <div v-for="(message, index) in contatti[active].chat" :class='message.status'>
+                            <i class="fas fa-chevron-circle-down"></i>
+                            <div class="dropdown">
+                                <span @click="removeMessage(index)">Elimina</span>
+                            </div>
                             <h4>{{message.testo}}</h4> 
+
                             <p>{{message.time}}</p>
                         </div>
                     </div>

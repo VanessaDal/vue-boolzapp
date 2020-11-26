@@ -18,6 +18,7 @@ var app=new Vue({
                     },
                     {
                         testo:"ciao",
+                        time: "22/11/2020 16:15",
                         status:"sent"
                     }  
                 ],
@@ -36,6 +37,7 @@ var app=new Vue({
                     },
                     {
                         testo:"ciao",
+                        time: "22/11/2020 16:15",
                         status:"sent"
                     }
                 ],
@@ -54,6 +56,7 @@ var app=new Vue({
                     },
                     {
                         testo:"ciao",
+                        time: "22/11/2020 16:15",
                         status:"sent"
                     } 
                 ],
@@ -77,6 +80,7 @@ var app=new Vue({
                     },
                     {
                         testo:"ciao",
+                        time: "22/11/2020 16:15",
                         status:"sent"
                     }
                 ],
@@ -93,6 +97,7 @@ var app=new Vue({
         chatBot:function(){
             this.contatti[this.active].chat.push({
                 testo: "che vuoi?",
+                time: "22/11/2020 16:15",
                 status:"received"
             });
         },
@@ -107,6 +112,7 @@ var app=new Vue({
             //inserire il nostro messaggio!
             this.contatti[this.active].chat.push({
                 testo: this.text,
+                time: "22/11/2020 16:15",
                 status:"sent"
             })
 
@@ -120,7 +126,11 @@ var app=new Vue({
                     utente.filter = false;
                 };
             });
-        }
+        },
+
+        removeMessage:function(i){
+            this.contatti[this.active].chat.splice(i, 1);
+        },
 
     }
 })

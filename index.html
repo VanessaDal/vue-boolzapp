@@ -39,12 +39,12 @@
                         </div>
                     </div>
                     <div class="ricerca">
-                        <input  type="search" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model='search_user' type="search" v-on:keyup='filterChat' placeholder="Cerca o inizia una nuova chat">
                         <i class="fas fa-search"></i>
 
                     </div>
                     <div class="contatti">
-                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': index == active}" @click='activeChat(index)'>
+                        <div class="utenti" v-for="(utente, index) in contatti" :class="{'active': index == active}" v-if='utente.filter' @click='activeChat(index)'>
                             <div class="left">
                                 <img :src='utente.img'  alt="">
                                 <div>

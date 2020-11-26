@@ -3,6 +3,7 @@ var app=new Vue({
     data:{
         active:0,
         text: '',
+        search_user:"",
         contatti:[
             {
                 nome:"Billy Ballo",
@@ -19,7 +20,8 @@ var app=new Vue({
                         testo:"ciao",
                         status:"sent"
                     }  
-                ]
+                ],
+                filter: true
             },
             {
                 nome:"Herbert Ballerina",
@@ -36,7 +38,8 @@ var app=new Vue({
                         testo:"ciao",
                         status:"sent"
                     }
-                ]
+                ],
+                filter: true
             },
             {
                 nome:"Anna Pannocchia",
@@ -53,7 +56,8 @@ var app=new Vue({
                         testo:"ciao",
                         status:"sent"
                     } 
-                ]
+                ],
+                filter: true
             },
             {
                 nome:"Riccardino Fuffolo",
@@ -75,7 +79,8 @@ var app=new Vue({
                         testo:"ciao",
                         status:"sent"
                     }
-                ]
+                ],
+                filter: true
             }
         ]
     },
@@ -83,11 +88,6 @@ var app=new Vue({
     methods:{
         activeChat: function(index) {
             this.active = index;
-            /*this.contatti.map(function(user) {
-                user.selezionato = user.selezionato === this.active;
-                return user;
-            })
-            this.contatti[index].selezionato=true;*/
         },
 
         chatBot:function(){
@@ -98,7 +98,7 @@ var app=new Vue({
         },
 
         timedChatBot:function(){
-            setTimeout(this.chatBot,3000)
+            setTimeout(this.chatBot,1000)
         },
         
         submitText:function(){
@@ -112,6 +112,15 @@ var app=new Vue({
 
             this.text="";
         },
+        filterChat:function(){
+            this.contatti.forEach(utente => {
+                if (utente.nome.toLowerCase().includes(this.search_user.toLowerCase())) {
+                    utente.filter = true;
+                } else {
+                    utente.filter = false;
+                };
+            });
+        }
 
     }
 })

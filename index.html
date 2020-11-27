@@ -77,10 +77,12 @@
                        
                     <div class="chat"> 
                         <div v-for="(message, index) in contatti[active].chat" :class='message.status'>
-                            <i class="fas fa-chevron-circle-down"></i>
-                            <div class="dropdown">
-                                <span @click="removeMessage(index)">Elimina</span>
-                            </div>
+                            <i class="fas fa-chevron-circle-down">
+                                <div class="dropdown">
+                                    <span @click="removeMessage(index)">Elimina</span>
+                                </div>
+                            </i>
+
                             <h4>{{message.testo}}</h4> 
 
                             <p>{{message.time}}</p>

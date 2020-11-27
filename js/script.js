@@ -22,7 +22,8 @@ var app=new Vue({
                         status:"sent"
                     }  
                 ],
-                filter: true
+                filter: true,
+                dropon:true,
             },
             {
                 nome:"Herbert Ballerina",
@@ -41,7 +42,8 @@ var app=new Vue({
                         status:"sent"
                     }
                 ],
-                filter: true
+                filter: true,
+                dropon:true,
             },
             {
                 nome:"Anna Pannocchia",
@@ -60,7 +62,8 @@ var app=new Vue({
                         status:"sent"
                     } 
                 ],
-                filter: true
+                filter: true,
+                dropon:true,
             },
             {
                 nome:"Riccardino Fuffolo",
@@ -84,7 +87,8 @@ var app=new Vue({
                         status:"sent"
                     }
                 ],
-                filter: true
+                filter: true,
+                dropon:true,
             }
         ]
     },
